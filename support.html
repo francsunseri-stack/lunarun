@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support — LunaRun</title>
+<meta name="description" content="Help and answers for LunaRun by OffTrail.">
+<meta property="og:title" content="Support — LunaRun">
+<meta property="og:description" content="Help and answers for LunaRun by OffTrail.">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo.png" alt="" width="34" height="34">LunaRun</a>
+    <nav class="nav-links" aria-label="Site">
+      <a href="index.html#cycle">Your cycle</a>
+      <a href="index.html#training">Training</a>
+      <a href="index.html#coaches">Coaches</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="band">
+  <div class="wrap">
+    <div class="prose">
+      <span class="eyebrow">Support</span>
+      <h1>Help &amp; FAQ</h1>
+      <p>Most answers are below. If yours isn't, email us; a person reads every message, usually within a day.</p>
+      <div class="contact"><span>Email</span><span class="addr">support@offtrailrun.app</span></div>
+
+      <h2>Getting your runs in</h2>
+      <div class="faq">
+        <details><summary>How do I import from COROS, Garmin, Apple Watch or Strava?</summary><p>All of them sync to Apple Health. In LunaRun go to Log → Apple Health → Connect, allow the categories, then Import. LunaRun pulls the last 90 days and skips anything already in your log. Re-import any time; duplicates are ignored.</p></details>
+        <details><summary>How do I import a FIT file?</summary><p>Export the activity as FIT from your watch app, then either share it to LunaRun from the share sheet, open it from the Files app, or use Log → FIT file → Import. The run is added with heart rate, climb and the route. If the same run is already in your log it's skipped and you'll see a note.</p></details>
+        <details><summary>Why doesn't a run show a map?</summary><p>Hand-logged runs have no track. Health-imported runs show one if the source app saved a route to Health (COROS and Garmin do; some apps don't). FIT files always carry the track if the watch had a GPS fix.</p></details>
+        <details><summary>Can I change kilometres to miles?</summary><p>Yes: Today → Settings → Profile → Distance unit. Every stored run and plan is converted, so nothing gets mislabelled.</p></details>
+      </div>
+
+      <h2 id="watches">Watches and connected apps</h2>
+      <div class="faq">
+        <details><summary>Will workouts go straight to my COROS or Garmin watch?</summary><p>That's coming. Direct connections are in development: planned workouts go to your watch and finished runs come back automatically. See <a href="https://offtrailrun.app/coros.html">LunaRun + COROS</a> and <a href="https://offtrailrun.app/garmin.html">LunaRun + Garmin</a> for setup, what's shared and how to disconnect.</p></details>
+        <details><summary>How do I disconnect a watch account?</summary><p>Gear on Today → Connected apps → choose the service → Disconnect. Syncing stops straight away and we delete the data received from that service within 30 days.</p></details>
+      </div>
+
+      <h2 id="health">Health check and questionnaires</h2>
+      <div class="faq">
+        <details><summary>Why does sign-up ask health questions?</summary><p>Nine yes/no questions, adapted from the standard PAR-Q, so you and your coach start safely. Every question can be skipped and nothing blocks you. A "yes" just suggests checking with your doctor before ramping up.</p></details>
+        <details><summary>Who can see my health answers?</summary><p>Only you, by default. A linked coach sees which questions need a look and suggested next steps, not your answers, unless you turn on sharing under Settings → Coaching → Health &amp; questionnaires. You can turn it off or delete every answer there at any time.</p></details>
+        <details><summary>My coach sent me a questionnaire. Do I have to answer?</summary><p>No. Questionnaires are optional: answer what you're comfortable with, skip any question, or decline the whole thing. Your coach sees that you declined, nothing more.</p></details>
+      </div>
+
+      <h2>Plans and predictions</h2>
+      <div class="faq">
+        <details><summary>Why does the predictor say "not enough data"?</summary><p>It needs a few real efforts to estimate your fitness: at least four runs in the last 28 days, or a personal record entered under Today → ⚙ Settings → Profile. Imports from Health count.</p></details>
+        <details><summary>How is the finish time calculated?</summary><p>From your best recent efforts it estimates a VDOT and an endurance exponent, converts the course into equivalent flat distance using the energy cost of each grade, then applies altitude, descent and aid-station adjustments. The "Why" panel on the Goal Race screen shows every factor. The full method is public in the app's methodology document.</p></details>
+        <details><summary>Can I import my race course?</summary><p>Yes. Train → Race → Import GPX. If the GPX has no elevation the app uses the climb you typed.</p></details>
+        <details><summary>My plan started mid-week. Is that right?</summary><p>Plans start on the Monday of the current week and end on your race day. If the race falls early in a week, the last week is shortened rather than padded.</p></details>
+      </div>
+
+      <h2 id="coaches">Coaches</h2>
+      <div class="faq">
+        <details><summary>How much does LunaRun cost for coaches?</summary><p>Nothing. Coaches bring athletes; athletes pay for Pro.</p></details>
+        <details><summary>How do athletes find me?</summary><p>Your invite code is on the Athletes tab (share it any way you like). Athletes can also be matched with you: complete your profile (methodology, matching profile and coaching commitments) to at least 80% and you'll appear in matches for athletes whose needs, style and budget fit.</p></details>
+        <details><summary>How does coach matching work for athletes?</summary><p>Settings → Coaching → Match me with a coach. About 11 quick questions (what you need help with, coaching style, check-ins, budget and a few preferences), then your top three coaches with the reasons they matched. Connecting links the coach, exactly like entering her code.</p></details>
+        <details><summary>Can I change my methodology after setup?</summary><p>Yes: Methodology → Edit methodology. Your answers are kept and you change only what you need.</p></details>
+      </div>
+
+      <h2>Subscriptions and account</h2>
+      <div class="faq">
+        <details><summary>How do I cancel LunaRun Pro?</summary><p>Subscriptions are managed by Apple: Settings → your name → Subscriptions → LunaRun. Cancelling keeps Pro until the end of the period you've paid for.</p></details>
+        <details><summary>I bought Pro on another phone. How do I restore it?</summary><p>Open any Pro feature and tap Restore purchases on the paywall. It's tied to your Apple Account, not to LunaRun's sign-in.</p></details>
+        <details><summary>How do I delete my account?</summary><p>Today → Settings → Account → Delete account. Your account and intake answers are removed from our servers immediately. Runs in your iCloud are yours to keep or delete. You can also email us and we'll delete server-side data within 30 days.</p></details>
+        <details><summary>Something's wrong with a number.</summary><p>Email us with the run or the FIT/GPX file attached. Climb, distance and pace calculations are all documented, and we'd rather fix a bug than argue with it.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 LunaRun by OffTrail</span>
+    <a href="index.html#cycle">Your cycle</a>
+    <a href="index.html#training">Training</a>
+    <a href="index.html#coaches">Coaches</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="https://offtrailrun.app/">OffTrail</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

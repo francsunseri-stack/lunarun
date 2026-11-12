@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy — LunaRun</title>
+<meta name="description" content="What LunaRun stores, where, and who can see it. The cycle log stays on your iPhone.">
+<meta property="og:title" content="Privacy — LunaRun">
+<meta property="og:description" content="What LunaRun stores, where, and who can see it. The cycle log stays on your iPhone.">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo.png" alt="" width="34" height="34">LunaRun</a>
+    <nav class="nav-links" aria-label="Site">
+      <a href="index.html#cycle">Your cycle</a>
+      <a href="index.html#training">Training</a>
+      <a href="index.html#coaches">Coaches</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="band">
+  <div class="wrap">
+    <div class="prose">
+      <span class="eyebrow">Privacy</span>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Effective November 11, 2026</p>
+
+      <p>LunaRun is a training app for women who run, made by OffTrail. Your account works in both apps and is held in the same place. This policy explains what the app stores, where, and what we can and can't see. The short version: your runs and health data stay on your device and in your own iCloud; our servers hold your account, your intake and questionnaire answers, and what you choose to share with a coach or a race-day crew; we don't sell data and we don't run ads.</p>
+
+      <h2>What we collect</h2>
+      <h3>Account</h3>
+      <p>When you sign in with Apple or Google we receive a user identifier, your email address (or Apple's private relay address if you chose to hide it) and, on first sign-in, your name. Authentication is handled by Firebase Authentication (Google LLC).</p>
+      <h3>Intake answers</h3>
+      <p>During setup you tell us about your running (experience, weekly volume, goal race, availability) or, for coaches, your coaching methodology. These answers are stored in our database (Google Cloud Firestore, United States) under your account so plans and coach matching can use them. You can change them in the app at any time.</p>
+      <h3>Health questionnaires</h3>
+      <p>Sign-up includes an optional health screen (nine yes/no questions), and a coach may send you further optional questionnaires, such as a health history. Your answers are stored under your account in a private record that only you can read (Google Cloud Firestore, United States) and on your device. A linked coach sees only which questions need a look, the suggested next steps and how many you answered, unless you turn on <strong>Share full health answers with my coach</strong>, which you can turn off at any time. Health answers are never used for advertising, never sold and never used to train AI models. Delete them any time under Settings → Coaching → Health &amp; questionnaires.</p>
+      <h3>Coach matching</h3>
+      <p>If you ask to be matched with a coach, your matching answers (what you want help with, coaching style, budget and preferences) are stored with your questionnaire answers and compared with coaches' public profiles. Coaches who join matching publish a profile (name, credentials, bio, specialties, price range and matching answers) that signed-in LunaRun users can see.</p>
+      <h3>Runs, routes and training data</h3>
+      <p>Logged runs, imported FIT files, GPS routes, training plans and your profile are stored on your device and synced to your personal iCloud account (CloudKit private database). We cannot read your iCloud data. If you turn off iCloud for LunaRun, it stays on the device only.</p>
+      <h3>Apple Health</h3>
+      <p>With your permission LunaRun reads running workouts, heart rate, resting heart rate, weight and date of birth from Apple Health, and can write runs you log back to Health. Health data is used on your device and in your iCloud. It reaches our servers in one case only: if you link a coach, the runs you share with her (see Coach connections) can include heart rate and routes that came from Health. Health data is never used for advertising, never sold, never used to train AI models and never shared with anyone you haven't chosen, in line with Apple's HealthKit guidelines.</p>
+      <h3>Cycle log</h3>
+      <p>Cycle tracking is optional and off until you turn it on. What you log (flow, symptoms, how much they are getting in the way, and notes) is stored on your iPhone only. It is not sent to our servers, is not shared with a coach, and is never used for advertising or sold. It is included in your iPhone's own backup if you back up your device. With your permission LunaRun can read past menstrual flow from Apple Health to fill the log; it does not write cycle data to Health. If you choose to ease a run, the session on your plan is changed to an easy run with a note that it was eased for symptoms that day; a linked coach sees that session like any other on your plan, and nothing else from the log. Deleting the app removes the log from your phone.</p>
+      <h3>Connected watch accounts (COROS and Garmin)</h3>
+      <p>When direct connections are available and you choose to connect COROS or Garmin, you sign in on their own page and LunaRun receives an access token (stored in your iPhone's Keychain). We then receive the workouts and activity data you allow (such as distance, time, heart rate, elevation, routes and FIT files) and send the planned workouts and courses you choose to sync. This data is used to keep your log, training load and plan current. It is stored on your device, in your iCloud, and in our database only as needed to sync with your coach if you've linked one. It is shown to you and your linked coach only, never sold, never used for advertising and never used to train AI models. Disconnect any time in the app or from the COROS or Garmin side; we then delete the data received from that service within 30 days.</p>
+      <h3>Subscriptions</h3>
+      <p>LunaRun Pro is sold through Apple's App Store. Apple processes payment; we receive only an anonymised entitlement that says whether a subscription is active. We never see your card details.</p>
+      <h3>Coach connections</h3>
+      <p>If you link to a coach by invite code or matching, the coach first has to accept you; nothing is shared until she does. After that, a summary of your training (plan, goals, recent weeks and compliance with the plan) and your runs from the last 42 days, including notes, fuelling, heart rate and GPS routes, plus the availability you set and any pain reports you log, are stored in our database (Google Cloud Firestore, United States) where only you and that coach can read them, plus the health summary described above (full health answers only if you share them). Runs older than 42 days are removed from the shared copy. Your coach also sees your name and email address. If you unlink, or the coach removes you, everything shared with that coach is deleted from our servers; a new coach starts with nothing.</p>
+      <h3>Availability and pain reports</h3>
+      <p>The time you have each day and any pain or niggles you log are stored on your device and in a private record under your account (Google Cloud Firestore, United States) that only you can read, so a new phone gets them back. They're shared with a linked coach as described above, and never used for advertising or sold. Delete a report any time under More → Setbacks &amp; pain.</p>
+      <h3>Messages with your coach</h3>
+      <p>Messages, comments on sessions and your coach's session reviews are stored in our database (Google Cloud Firestore, United States) where only you and your linked coach can read them. To notify you of a new message we send its sender's name and the start of the text through Firebase Cloud Messaging (Google LLC) and Apple Push Notification service; your phone's notification token is stored with your account and removed when you sign out. When the coaching link ends, the whole conversation is deleted from our servers.</p>
+      <h3>Race-day crew</h3>
+      <p>If you build a race-day plan and invite crew with a code or link, the people who join see the plan (race, aid stations, target times, gear and notes) and the check-ins posted during the race, along with each other's names. A crew member can add a phone number when joining (or later), and the runner can add or edit crew numbers; those numbers are stored with the plan and shown only to the runner and that race's crew, so you can call or text each other on race day. Remove a number by clearing it. Each race also has a race chat: messages are stored with the plan (Google Cloud Firestore, United States), can be read only by the runner and that race's crew, and are sent to them as notifications through Firebase Cloud Messaging and Apple Push Notification service. You can delete your own messages, the runner can delete any, and a race's chat is deleted with its plan. You can remove crew members and reset the code at any time; removed people lose access straight away.</p>
+      <p><strong>Race-day location sharing.</strong> On a race-day plan, the runner and each crew member can choose to share their location for that race. It is off until you turn it on, and you can turn it off at any time. When on, the app sends your position (and, for the runner, how far along the course you are) about once a minute while the runner is moving and every few minutes for crew, only from two hours before the start until a few hours after the planned finish, or until the runner is marked finished or dropped. iPhone shows the location indicator while it runs. Positions are stored with the plan (Google Cloud Firestore, United States), can be seen only by the runner and that race's crew, keep only your latest position, expire within two days, and are deleted when you turn sharing off, leave the crew, are removed, or the plan is deleted. The course line from the race's GPX file is stored with the plan so the crew can see it on the map.</p>
+      <h3>Shared workouts</h3>
+      <p>Workouts you publish to the shared library are visible to signed-in LunaRun users with your display name as the author. Unpublish or delete them any time.</p>
+      <h3>Exercise photos</h3>
+      <p>Exercise photos in the strength library are loaded from a public content network (jsDelivr). As with any web request, that service sees your device's IP address; no account information is sent.</p>
+      <h3>Coach notes (AI)</h3>
+      <p>Coach notes are optional and off until you turn them on, during sign-up or under My Profile → Coach notes. When your plan changes, LunaRun can ask Claude, an AI model made by Anthropic, PBC, to write a short note explaining why. For each note our server sends Anthropic: a summary of the change and the reason for it; your training method, goal race name, weeks to race, this week's training phase and fitness level; whether a sick, injured or busy spell is open; and, if you use a built-in coach, that coach's name and tone. We do not send your name, email address, runs, routes or any Apple Health data. Anthropic processes the request to write the note and does not use it to train its models. The note is shown to you in the app and kept on your device. Our server counts how many notes your account has used each day (to limit usage), and stores nothing else about the request. Turn coach notes off any time in My Profile; no further requests are made.</p>
+
+      <h3>Coach chat and coach messages (AI)</h3>
+      <p>If you use a built-in coach and have turned on AI coaching, you can chat with your coach, and Pro members get their Monday brief and race-week messages written by Claude in the coach's voice. For each reply or message our server sends Anthropic: what you typed in the chat and the last few messages of the conversation; your coach; your goal race name and days to race; your training method, phase and fitness level; whether a sick, injured or busy spell is open; this week's planned sessions and which are done; how many planned runs you completed last week; and the date, time, distance, climb and how-it-felt rating of runs you logged by hand, recorded with LunaRun on Apple Watch or imported from a FIT file or COROS in the last two weeks. Runs imported from Apple Health are never sent, and neither are your name, email address, routes, heart rate or any other Apple Health data. Anthropic processes the request to write the reply and does not use it to train its models. Chat history is kept on your device only. If your coach suggests a change to a session, nothing changes unless you tap it. Our server counts replies per account per day (to limit usage) and stores nothing else. Turn AI coaching off in My Profile any time.</p>
+
+      <h3>App usage analytics</h3>
+      <p>From version 1.5.2, the iPhone app uses Google Analytics for Firebase to count a short list of events: signing in (and whether by Apple, Google or email), choosing athlete or coach, finishing setup, linking to a coach, building a plan, seeing the Pro screen, buying Pro, and a coach sending a plan change. Google also records standard technical details with each event, such as device model, iOS version, app version, country and an app-instance identifier, along with whether the account is an athlete or a coach and free or Pro. These events are not linked to your name, email address or account. We use this only to see which parts of the app are used and which channels bring people in. No run data, health data, names, email addresses or anything you type is included, the advertising identifier is not used, and you are not tracked across other companies' apps or websites.</p>
+
+      <h2>What we don't collect</h2>
+      <ul>
+        <li>No advertising or cross-app tracking SDKs.</li>
+        <li>No advertising identifiers, no ad networks.</li>
+        <li>No location tracking except where you start it yourself. LunaRun uses location only while you record a run on Apple Watch, to draw your route and measure distance, and during race-day location sharing if you turn it on (see Race-day crew). Routes are stored with your runs as described above; we never track where you are outside a recorded run or a race you chose to share.</li>
+        <li>No selling, renting or sharing of personal data.</li>
+        <li>No AI training on your data, by us or by the AI provider behind coach notes and coach chat.</li>
+      </ul>
+
+      <h2>Community</h2>
+      <p>The LunaRun community runs on Discord, which is a separate service with its own privacy policy. Nothing from the app is posted there automatically.</p>
+
+      <h2>Deleting your data</h2>
+      <p>In the app, Today → Settings → Account → <strong>Delete account</strong> removes everything we hold for you from our servers immediately: your account, intake and questionnaire answers, anything shared with a coach, coach links, your race-day plans with their check-ins, race chat and shared locations, your crew memberships and your shared workouts. The app's copy of server data on your phone is cleared when you sign out or delete your account. Runs, plans and routes in your iCloud are yours; delete them in the app or remove LunaRun's data under Settings → Apple Account → iCloud → Manage Storage. You can also email us at the address below and we'll delete your server-side data within 30 days.</p>
+
+      <h2>Children</h2>
+      <p>LunaRun is not directed at children under 13 and we do not knowingly collect data from them.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes in a way that matters we'll say so in the app before it takes effect. The effective date at the top is the version you're reading.</p>
+
+      <h2>Contact</h2>
+      <div class="contact"><span>Questions or deletion requests:</span><span class="addr">support@offtrailrun.app</span></div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="wrap">
+    <span>© 2026 LunaRun by OffTrail</span>
+    <a href="index.html#cycle">Your cycle</a>
+    <a href="index.html#training">Training</a>
+    <a href="index.html#coaches">Coaches</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="https://offtrailrun.app/">OffTrail</a>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
