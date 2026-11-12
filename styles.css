@@ -7,7 +7,7 @@
    deep plum in dark. Light-first; dark follows the viewer's setting. */
 :root {
   --bg: #FCF1F4; --bg-2: #F7E4EA; --surface: #FFFFFF; --line: #EBCFD8;
-  --fg: #2A1420; --fg-2: #6B4A58; --fg-3: #94727F;
+  --fg: #3C2D2E; --fg-2: #6B5558; --fg-3: #7D686C;
   --accent: #7A2E4A; --accent-ink: #FFFFFF; --accent-soft: rgba(122, 46, 74, 0.10);
   --good: #10B981; --info: #3B82F6; --topo: rgba(122, 46, 74, 0.10);
   --display: "Fraunces", Georgia, "Times New Roman", serif;
@@ -188,3 +188,8 @@ p { margin: 0; }
 .byline { font-size: 14px; color: var(--fg-3); }
 .coachlist { display: grid; gap: 14px; grid-template-columns: repeat(5, minmax(0,1fr)); }
 @media (max-width: 900px) { .coachlist { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+
+/* Wordmark in the logo's script (Great Vibes); ink is chocolate plum. */
+.brand { font-family: "Great Vibes", "Snell Roundhand", cursive; font-weight: 400; font-size: 34px; color: var(--accent); letter-spacing: 0; line-height: 1; }
+.brand img { border-radius: 9px; }
+.hero h1 { font-family: "Great Vibes", "Snell Roundhand", cursive; font-weight: 400; font-size: clamp(60px, 10vw, 112px); color: var(--accent); line-height: 1.05; letter-spacing: 0; }
