@@ -3,31 +3,32 @@
    content sits in a 1120px measure, phone-first.
    Dark-first (the app is dark); a light theme follows the viewer's setting. */
 
-/* LunaRun palette, from the app's Theme: plum on blush in light, blush on
-   deep plum in dark. Light-first; dark follows the viewer's setting. */
+/* LunaRun palette, from the app's Theme (Nov 17): warm stone surfaces, the
+   logo's plum for actions, sage for data. Light-first; dark follows the
+   viewer's setting. */
 :root {
-  --bg: #FCF1F4; --bg-2: #F7E4EA; --surface: #FFFFFF; --line: #EBCFD8;
-  --fg: #3C2D2E; --fg-2: #6B5558; --fg-3: #7D686C;
-  --accent: #7A2E4A; --accent-ink: #FFFFFF; --accent-soft: rgba(122, 46, 74, 0.10);
-  --good: #10B981; --info: #3B82F6; --topo: rgba(122, 46, 74, 0.10);
-  --display: "Fraunces", Georgia, "Times New Roman", serif;
-  --body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --bg: #F3F0EB; --bg-2: #EAE6DF; --surface: #FFFFFF; --line: #DDD7CE;
+  --fg: #2A2326; --fg-2: #5C5557; --fg-3: #6F686A;
+  --accent: #722239; --accent-ink: #FFFFFF; --accent-soft: rgba(114, 34, 57, 0.09);
+  --good: #1E7A45; --info: #4F6B5A; --topo: rgba(42, 35, 38, 0.07);
+  --display: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --body: "Inter", "Helvetica Neue", Arial, sans-serif;
   --mono: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
   --measure: 1120px; --radius: 18px;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #1A0F14; --bg-2: #22141B; --surface: #2B1922; --line: #45293A;
-    --fg: #FBEFF3; --fg-2: #CDAFBB; --fg-3: #94727F;
-    --accent: #F2A7BE; --accent-ink: #2A0F1B; --accent-soft: rgba(242, 167, 190, 0.14); --topo: rgba(242, 167, 190, 0.10);
+    --bg: #171416; --bg-2: #1E1A1C; --surface: #231E21; --line: #383034;
+    --fg: #F4F0EC; --fg-2: #C4BBBF; --fg-3: #9A9195;
+    --accent: #E3A0B4; --accent-ink: #2A0F1B; --accent-soft: rgba(227, 160, 180, 0.14); --topo: rgba(255, 255, 255, 0.06);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #1A0F14; --bg-2: #22141B; --surface: #2B1922; --line: #45293A;
-  --fg: #FBEFF3; --fg-2: #CDAFBB; --fg-3: #94727F;
-  --accent: #F2A7BE; --accent-ink: #2A0F1B; --accent-soft: rgba(242, 167, 190, 0.14); --topo: rgba(242, 167, 190, 0.10);
+  --bg: #171416; --bg-2: #1E1A1C; --surface: #231E21; --line: #383034;
+  --fg: #F4F0EC; --fg-2: #C4BBBF; --fg-3: #9A9195;
+  --accent: #E3A0B4; --accent-ink: #2A0F1B; --accent-soft: rgba(227, 160, 180, 0.14); --topo: rgba(255, 255, 255, 0.06);
   color-scheme: dark;
 }
 
@@ -44,7 +45,7 @@ body {
 }
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
-h1, h2, h3 { font-family: var(--display); line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: -0.02em; }
 h1 { font-size: clamp(40px, 7vw, 80px); font-weight: 600; }
 h2 { font-size: clamp(28px, 4.2vw, 46px); font-weight: 600; }
 h3 { font-size: 22px; font-weight: 600; }
@@ -184,7 +185,7 @@ p { margin: 0; }
 .moons svg { width: clamp(40px, 9vw, 76px); height: auto; }
 .moons .lit { fill: var(--accent); } .moons .dark { fill: var(--accent-soft); stroke: var(--line); }
 .hero-art { display: grid; gap: 22px; justify-items: center; }
-.hero-art img { width: min(220px, 50vw); border-radius: 48px; box-shadow: 0 30px 60px -30px rgba(122,46,74,.55); }
+.hero-art img { width: min(220px, 50vw); border-radius: 48px; box-shadow: 0 30px 60px -30px rgba(42,35,38,.35); }
 .byline { font-size: 14px; color: var(--fg-3); }
 .coachlist { display: grid; gap: 14px; grid-template-columns: repeat(5, minmax(0,1fr)); }
 @media (max-width: 900px) { .coachlist { grid-template-columns: repeat(2, minmax(0,1fr)); } }
@@ -192,4 +193,5 @@ p { margin: 0; }
 /* Wordmark in the logo's script (Great Vibes); ink is chocolate plum. */
 .brand { font-family: "Great Vibes", "Snell Roundhand", cursive; font-weight: 400; font-size: 34px; color: var(--accent); letter-spacing: 0; line-height: 1; }
 .brand img { border-radius: 9px; }
-.hero h1 { font-family: "Great Vibes", "Snell Roundhand", cursive; font-weight: 400; font-size: clamp(60px, 10vw, 112px); color: var(--accent); line-height: 1.05; letter-spacing: 0; }
+/* The script is for the wordmark only; the headline is set in the display face. */
+.hero h1 { font-weight: 700; letter-spacing: -0.02em; }
